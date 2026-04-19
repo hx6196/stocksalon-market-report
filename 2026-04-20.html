@@ -677,6 +677,35 @@
     text-align: center;
   }
 
+  .preview-list {
+    list-style: none;
+    margin: 18px auto 8px;
+    padding: 20px 22px;
+    background: var(--bg-alt);
+    border: 1px solid var(--border-light);
+    border-radius: 6px;
+    max-width: 560px;
+  }
+  .preview-list li {
+    position: relative;
+    padding: 8px 0 8px 22px;
+    font-size: 0.95rem;
+    color: var(--text);
+    line-height: 1.7;
+    border-bottom: 1px dashed var(--border-light);
+  }
+  .preview-list li:last-child {
+    border-bottom: none;
+  }
+  .preview-list li::before {
+    content: '▶';
+    position: absolute;
+    left: 0;
+    top: 11px;
+    color: var(--accent-gold);
+    font-size: 0.7em;
+  }
+
   /* ━━━ トップへ戻る ━━━ */
   .back-to-top {
     position: fixed;
@@ -802,6 +831,15 @@
   </div>
 
   <p class="summary-note">▼ ここから先は、上の内容をくわしく解説しています ▼</p>
+
+  <ul class="preview-list">
+    <li>今の相場で、何が起きているのか</li>
+    <li>お金は今、どこに流れているのか</li>
+    <li>今、追い風が吹いているセクター</li>
+    <li>慎重に見ておきたいセクター</li>
+    <li>上がる場合・下がる場合のシナリオ</li>
+    <li>来週以降、注目しておきたいこと</li>
+  </ul>
 </section>
 
 <!-- ━━━ 会員限定ゲート（ここから先は非公開） ━━━ -->
