@@ -1,0 +1,217 @@
+/* market-report-page — スマホファースト・50代以上対応 */
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --color-bg: #fafaf8;
+  --color-surface: #ffffff;
+  --color-primary: #1a3557;
+  --color-accent: #c8973a;
+  --color-text: #1e1e1e;
+  --color-muted: #666666;
+  --color-border: #e0e0dc;
+  --color-locked-bg: #f0f0ec;
+  --font-base: 'Hiragino Kaku Gothic ProN', 'Hiragino Sans', 'Noto Sans JP', sans-serif;
+  --radius: 8px;
+}
+
+html {
+  font-size: 17px; /* 50代以上向けに少し大きめ */
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  font-family: var(--font-base);
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  line-height: 1.8;
+  min-height: 100vh;
+}
+
+/* ── ヘッダー ── */
+.site-header {
+  background-color: var(--color-primary);
+  color: #fff;
+  padding: 16px 20px;
+  text-align: center;
+}
+.site-header .brand {
+  font-size: 0.85rem;
+  opacity: 0.8;
+  letter-spacing: 0.05em;
+}
+.site-header .site-title {
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin-top: 4px;
+}
+
+/* ── メインコンテンツ ── */
+.container {
+  max-width: 680px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+/* ── レポートヘッダー ── */
+.report-header {
+  background-color: var(--color-surface);
+  border-bottom: 3px solid var(--color-accent);
+  padding: 24px 20px 20px;
+  margin-bottom: 0;
+}
+.report-date {
+  font-size: 0.8rem;
+  color: var(--color-muted);
+  letter-spacing: 0.05em;
+}
+.report-title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--color-primary);
+  margin-top: 6px;
+  line-height: 1.5;
+}
+
+/* ── 著者バッジ ── */
+.author-badge {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 14px;
+  padding-top: 14px;
+  border-top: 1px solid var(--color-border);
+}
+.author-badge .author-name {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--color-primary);
+}
+.author-badge .author-label {
+  font-size: 0.75rem;
+  color: var(--color-muted);
+}
+
+/* ── レポート本文 ── */
+.report-body {
+  background-color: var(--color-surface);
+  padding: 24px 20px;
+}
+.report-body p {
+  margin-bottom: 1.4em;
+  font-size: 1rem;
+}
+.report-body h2 {
+  font-size: 1.05rem;
+  color: var(--color-primary);
+  border-left: 4px solid var(--color-accent);
+  padding-left: 10px;
+  margin: 24px 0 12px;
+}
+.report-body ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 1.4em;
+}
+.report-body ul li {
+  padding: 6px 0 6px 1.2em;
+  position: relative;
+  border-bottom: 1px solid var(--color-border);
+}
+.report-body ul li::before {
+  content: '▶';
+  position: absolute;
+  left: 0;
+  color: var(--color-accent);
+  font-size: 0.7em;
+  top: 10px;
+}
+
+/* ── 会員限定ゲート ── */
+.locked-section {
+  background-color: var(--color-locked-bg);
+  border: 1px dashed var(--color-border);
+  border-radius: var(--radius);
+  padding: 24px 20px;
+  margin: 0;
+  text-align: center;
+}
+.locked-section .lock-icon {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+.locked-section .lock-title {
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--color-primary);
+  margin-bottom: 8px;
+}
+.locked-section .lock-desc {
+  font-size: 0.9rem;
+  color: var(--color-muted);
+  line-height: 1.7;
+}
+
+/* ── CTAブロック ── */
+.cta-block {
+  background-color: var(--color-primary);
+  color: #fff;
+  padding: 28px 20px;
+  text-align: center;
+}
+.cta-block .cta-title {
+  font-size: 1.05rem;
+  font-weight: 700;
+  margin-bottom: 8px;
+  line-height: 1.5;
+}
+.cta-block .cta-desc {
+  font-size: 0.85rem;
+  opacity: 0.85;
+  margin-bottom: 20px;
+  line-height: 1.7;
+}
+.btn-primary {
+  display: inline-block;
+  background-color: var(--color-accent);
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 700;
+  padding: 14px 32px;
+  border-radius: 50px;
+  text-decoration: none;
+  letter-spacing: 0.03em;
+  transition: opacity 0.2s;
+}
+.btn-primary:hover {
+  opacity: 0.85;
+}
+
+/* ── フッター ── */
+.site-footer {
+  background-color: var(--color-primary);
+  color: rgba(255,255,255,0.6);
+  padding: 20px;
+  text-align: center;
+  font-size: 0.75rem;
+  line-height: 2;
+}
+.site-footer a {
+  color: rgba(255,255,255,0.6);
+  text-decoration: underline;
+}
+
+@media (min-width: 640px) {
+  html { font-size: 18px; }
+  .report-header,
+  .report-body,
+  .locked-section,
+  .cta-block {
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+}
