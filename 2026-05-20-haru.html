@@ -1,0 +1,1147 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+<title>週刊マーケットレポート｜2026年5月20日</title>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&family=Noto+Serif+JP:wght@700;900&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --text: #1a1a1a;
+    --text-sub: #444;
+    --bg: #ffffff;
+    --bg-alt: #f7f7f5;
+    --border: #d0d0d0;
+    --border-light: #e8e8e5;
+    --accent-red: #c0392b;
+    --accent-red-bg: #fdf0ee;
+    --accent-red-border: #e6a9a3;
+    --accent-blue: #1a5276;
+    --accent-blue-bg: #eaf1f7;
+    --accent-blue-border: #a3c4db;
+    --accent-green: #1e7e4a;
+    --accent-green-bg: #ecf6f0;
+    --accent-green-border: #a3d4b5;
+    --accent-gold: #7d5a0b;
+    --accent-gold-bg: #fdf6e3;
+    --accent-gold-border: #d4b96a;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  html {
+    font-size: 18px;
+    scroll-behavior: smooth;
+    -webkit-text-size-adjust: 100%;
+  }
+
+  body {
+    font-family: 'Noto Sans JP', 'Hiragino Kaku Gothic ProN', 'メイリオ', sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 2.0;
+    font-weight: 400;
+    -webkit-font-smoothing: antialiased;
+    padding-bottom: 60px;
+  }
+
+  /* ━━━ ヘッダー ━━━ */
+  .header {
+    background: var(--text);
+    color: #fff;
+    padding: 28px 20px 24px;
+  }
+  .header-label {
+    display: block;
+    font-size: 0.75rem;
+    letter-spacing: 0.2em;
+    color: #ccc;
+    margin-bottom: 4px;
+  }
+  .header-date {
+    display: block;
+    font-size: 0.85rem;
+    color: #aaa;
+    margin-bottom: 14px;
+  }
+  .header-title {
+    font-family: 'Noto Serif JP', serif;
+    font-size: 1.35rem;
+    font-weight: 900;
+    line-height: 1.6;
+    color: #fff;
+  }
+  .header-title .hl {
+    color: #f5a8a3;
+  }
+
+  /* ━━━ 免責 ━━━ */
+  .disclaimer {
+    background: var(--bg-alt);
+    border-bottom: 1px solid var(--border-light);
+    padding: 14px 20px;
+    font-size: 0.72rem;
+    color: #888;
+    line-height: 1.8;
+  }
+
+  /* ━━━ 目次 ━━━ */
+  .toc {
+    padding: 24px 20px;
+    background: var(--accent-blue-bg);
+    border-bottom: 2px solid var(--accent-blue-border);
+  }
+  .toc-title {
+    font-size: 1rem;
+    font-weight: 700;
+    margin-bottom: 14px;
+    color: var(--accent-blue);
+  }
+  .toc a {
+    display: flex;
+    align-items: baseline;
+    gap: 10px;
+    text-decoration: none;
+    color: var(--accent-blue);
+    font-size: 0.95rem;
+    font-weight: 500;
+    padding: 10px 0;
+    border-bottom: 1px solid var(--accent-blue-border);
+    line-height: 1.5;
+  }
+  .toc a:last-child { border-bottom: none; }
+  .toc a:active { background: rgba(26,82,118,0.08); }
+  .toc .toc-num {
+    font-weight: 700;
+    flex-shrink: 0;
+    min-width: 2em;
+  }
+
+  /* ━━━ メインコンテンツ ━━━ */
+  .main { padding: 0; }
+
+  /* ━━━ セクション ━━━ */
+  .section {
+    padding: 32px 20px 40px;
+    border-bottom: 6px solid var(--bg-alt);
+  }
+  .section-header { margin-bottom: 24px; }
+  .section-num {
+    display: block;
+    font-size: 0.8rem;
+    font-weight: 700;
+    color: var(--accent-blue);
+    letter-spacing: 0.1em;
+    margin-bottom: 4px;
+  }
+  .section-title {
+    font-family: 'Noto Serif JP', serif;
+    font-size: 1.25rem;
+    font-weight: 900;
+    line-height: 1.6;
+    padding-bottom: 10px;
+    border-bottom: 3px solid var(--text);
+  }
+
+  /* ━━━ 本文 ━━━ */
+  p {
+    margin-bottom: 18px;
+    font-size: 1rem;
+    line-height: 2.05;
+  }
+  strong, b {
+    font-weight: 700;
+    background: linear-gradient(transparent 60%, #ffe07a 60%);
+    padding: 0 2px;
+  }
+  .credit-table strong,
+  .resolve-box strong,
+  .callout-title strong,
+  .sector-card h4 strong,
+  .data-card strong,
+  .toc strong,
+  .section-note strong {
+    background: none;
+    padding: 0;
+  }
+
+  /* ━━━ 補足説明ボックス ━━━ */
+  .explain {
+    background: var(--accent-gold-bg);
+    border: 2px solid var(--accent-gold-border);
+    border-radius: 10px;
+    padding: 16px 18px;
+    margin: 18px 0;
+    font-size: 0.9rem;
+    line-height: 2.0;
+    color: var(--text-sub);
+  }
+  .explain-label {
+    display: block;
+    font-size: 0.78rem;
+    font-weight: 700;
+    color: var(--accent-gold);
+    margin-bottom: 4px;
+    letter-spacing: 0.05em;
+  }
+
+  /* ━━━ コールアウト ━━━ */
+  .callout {
+    border-radius: 12px;
+    padding: 20px 18px;
+    margin: 24px 0;
+    border-width: 2px;
+    border-style: solid;
+  }
+  .callout-title {
+    font-size: 1.05rem;
+    font-weight: 700;
+    line-height: 1.6;
+    margin-bottom: 12px;
+  }
+  .callout p {
+    font-size: 0.95rem;
+    margin-bottom: 14px;
+    line-height: 2.0;
+  }
+  .callout p:last-child { margin-bottom: 0; }
+
+  .callout.shock {
+    background: var(--accent-red-bg);
+    border-color: var(--accent-red-border);
+  }
+  .callout.shock .callout-title { color: var(--accent-red); }
+
+  .callout.info {
+    background: var(--accent-blue-bg);
+    border-color: var(--accent-blue-border);
+  }
+  .callout.info .callout-title { color: var(--accent-blue); }
+
+  .callout.positive {
+    background: var(--accent-green-bg);
+    border-color: var(--accent-green-border);
+  }
+  .callout.positive .callout-title { color: var(--accent-green); }
+
+  .callout.warning {
+    background: var(--accent-gold-bg);
+    border-color: var(--accent-gold-border);
+  }
+  .callout.warning .callout-title { color: var(--accent-gold); }
+
+  /* ━━━ データカード ━━━ */
+  .data-card {
+    background: var(--bg-alt);
+    border: 2px solid var(--border);
+    border-radius: 12px;
+    padding: 16px 18px;
+    margin: 12px 0;
+  }
+  .data-card-label {
+    font-size: 0.78rem;
+    color: #777;
+    font-weight: 500;
+    letter-spacing: 0.04em;
+    margin-bottom: 4px;
+  }
+  .data-card-value {
+    font-size: 1.55rem;
+    font-weight: 900;
+    line-height: 1.4;
+  }
+  .data-card-value.down { color: var(--accent-red); }
+  .data-card-value.up { color: var(--accent-green); }
+  .data-card-value.neutral { color: var(--accent-blue); }
+  .data-card-sub {
+    font-size: 0.82rem;
+    color: #666;
+    margin-top: 4px;
+    line-height: 1.7;
+  }
+
+  /* ━━━ 信用取引テーブル ━━━ */
+  .credit-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 0.88rem;
+    background: var(--bg);
+    border: 2px solid var(--border);
+    border-radius: 12px;
+    overflow: hidden;
+  }
+  .credit-table th {
+    background: var(--text);
+    color: #fff;
+    font-weight: 500;
+    text-align: left;
+    padding: 14px 14px;
+    font-size: 0.8rem;
+    letter-spacing: 0.04em;
+  }
+  .credit-table td {
+    padding: 14px 14px;
+    border-bottom: 2px solid var(--border-light);
+    vertical-align: top;
+    line-height: 1.8;
+  }
+  .credit-table tr:last-child td { border-bottom: none; }
+  .credit-table .val {
+    font-weight: 900;
+    font-size: 1.05rem;
+    display: block;
+  }
+  .credit-table .change {
+    font-size: 0.78rem;
+    color: #888;
+    display: block;
+    margin-top: 2px;
+  }
+  .credit-ratio {
+    text-align: center;
+    padding: 18px 14px;
+  }
+  .credit-ratio .val {
+    font-size: 1.6rem;
+    color: var(--accent-red);
+    display: block;
+    margin-bottom: 2px;
+  }
+  .credit-ratio .sub {
+    font-size: 0.78rem;
+    color: #888;
+  }
+
+  /* ━━━ セクターカード ━━━ */
+  .sector-card {
+    border-radius: 14px;
+    padding: 22px 20px;
+    margin: 22px 0;
+    border-width: 2px;
+    border-style: solid;
+  }
+  .sector-card.tailwind {
+    background: var(--accent-green-bg);
+    border-color: var(--accent-green-border);
+  }
+  .sector-card.headwind {
+    background: var(--accent-red-bg);
+    border-color: var(--accent-red-border);
+  }
+  .sector-card h4 {
+    font-size: 1.1rem;
+    font-weight: 700;
+    margin-bottom: 14px;
+    line-height: 1.5;
+  }
+  .sector-tag {
+    display: inline-block;
+    font-size: 0.75rem;
+    font-weight: 700;
+    padding: 3px 12px;
+    border-radius: 6px;
+    margin-bottom: 6px;
+  }
+  .sector-tag.tw { background: var(--accent-green); color: #fff; }
+  .sector-tag.hw { background: var(--accent-red); color: #fff; }
+  .sector-card p {
+    font-size: 0.95rem;
+    margin-bottom: 14px;
+    line-height: 2.0;
+  }
+  .sector-reasons {
+    margin: 16px 0 0 0;
+    padding: 0;
+    list-style: none;
+  }
+  .sector-reasons li {
+    position: relative;
+    padding: 10px 0 10px 28px;
+    font-size: 0.9rem;
+    line-height: 1.9;
+    border-bottom: 1px solid rgba(0,0,0,0.07);
+  }
+  .sector-reasons li:last-child { border-bottom: none; }
+  .sector-reasons li::before {
+    content: '●';
+    position: absolute;
+    left: 2px;
+    top: 12px;
+    font-size: 0.55rem;
+  }
+  .sector-card.tailwind .sector-reasons li::before { color: var(--accent-green); }
+  .sector-card.headwind .sector-reasons li::before { color: var(--accent-red); }
+
+  .note-small {
+    font-size: 0.82rem;
+    color: #888;
+    margin-top: 14px;
+    padding-top: 10px;
+    border-top: 1px dashed var(--border);
+    line-height: 1.8;
+  }
+  .resolve-box {
+    margin-top: 18px;
+    padding: 14px 16px;
+    background: rgba(255,255,255,0.7);
+    border-radius: 10px;
+    border: 1px dashed var(--border);
+    font-size: 0.88rem;
+    line-height: 1.9;
+    color: var(--text-sub);
+  }
+  .resolve-box strong {
+    display: block;
+    font-size: 0.78rem;
+    font-weight: 700;
+    color: var(--accent-blue);
+    margin-bottom: 4px;
+    letter-spacing: 0.05em;
+  }
+
+  /* ━━━ シナリオ ━━━ */
+  .scenario-block {
+    border-radius: 14px;
+    padding: 22px 20px;
+    margin: 22px 0;
+    border-width: 2px;
+    border-style: solid;
+  }
+  .scenario-block.bull {
+    background: var(--accent-green-bg);
+    border-color: var(--accent-green-border);
+  }
+  .scenario-block.bear {
+    background: var(--accent-red-bg);
+    border-color: var(--accent-red-border);
+  }
+  .scenario-block.neutral {
+    background: var(--accent-gold-bg);
+    border-color: var(--accent-gold-border);
+  }
+  .scenario-block h4 {
+    font-size: 1.1rem;
+    font-weight: 700;
+    margin-bottom: 14px;
+    line-height: 1.5;
+  }
+  .scenario-block.bull h4 { color: var(--accent-green); }
+  .scenario-block.bear h4 { color: var(--accent-red); }
+  .scenario-block.neutral h4 { color: var(--accent-gold); }
+  .scenario-block p {
+    font-size: 0.95rem;
+    line-height: 2.0;
+    margin-bottom: 14px;
+  }
+  .scenario-block ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  .scenario-block ul li {
+    padding: 10px 0 10px 28px;
+    position: relative;
+    font-size: 0.92rem;
+    line-height: 1.95;
+    border-bottom: 1px solid rgba(0,0,0,0.06);
+  }
+  .scenario-block ul li:last-child { border-bottom: none; }
+  .scenario-block.bull ul li::before { content: '✔'; position: absolute; left: 0; top: 10px; color: var(--accent-green); font-weight: 700; }
+  .scenario-block.bear ul li::before { content: '⚠'; position: absolute; left: 0; top: 10px; }
+  .scenario-block.neutral ul li::before { content: '◆'; position: absolute; left: 0; top: 10px; color: var(--accent-gold); }
+
+  /* ━━━ タイムライン ━━━ */
+  .timeline {
+    margin: 20px 0;
+    padding: 0;
+    list-style: none;
+  }
+  .timeline li {
+    padding: 18px 18px;
+    margin: 10px 0;
+    background: var(--bg-alt);
+    border-radius: 12px;
+    border: 2px solid var(--border-light);
+    font-size: 0.92rem;
+    line-height: 1.9;
+  }
+  .timeline li.important {
+    border-color: var(--accent-red-border);
+    background: var(--accent-red-bg);
+  }
+  .timeline .tl-date {
+    font-weight: 900;
+    font-size: 0.95rem;
+    color: var(--accent-blue);
+    display: block;
+    margin-bottom: 6px;
+  }
+  .timeline li.important .tl-date { color: var(--accent-red); }
+
+  /* ━━━ 5/16照合テーブル ━━━ */
+  .check-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 0.88rem;
+    background: var(--bg);
+    border: 2px solid var(--border);
+    border-radius: 12px;
+    overflow: hidden;
+  }
+  .check-table th {
+    background: var(--text);
+    color: #fff;
+    font-weight: 500;
+    text-align: left;
+    padding: 12px 12px;
+    font-size: 0.8rem;
+  }
+  .check-table td {
+    padding: 14px 12px;
+    border-bottom: 2px solid var(--border-light);
+    vertical-align: top;
+    line-height: 1.8;
+    font-size: 0.88rem;
+  }
+  .check-table tr:last-child td { border-bottom: none; }
+  .check-table .check-mark {
+    display: inline-block;
+    font-weight: 900;
+    color: var(--accent-green);
+    margin-right: 4px;
+  }
+
+  /* ━━━ 小見出し ━━━ */
+  .sub-heading {
+    font-size: 1.05rem;
+    font-weight: 700;
+    margin: 30px 0 14px;
+    padding: 10px 0;
+    border-bottom: 2px solid var(--border);
+    color: var(--text);
+  }
+
+  /* ━━━ セクション注 ━━━ */
+  .section-note {
+    font-size: 0.85rem;
+    color: #888;
+    margin-bottom: 20px;
+    line-height: 1.9;
+    padding: 12px 16px;
+    background: var(--bg-alt);
+    border-radius: 8px;
+    border-left: 4px solid var(--border);
+  }
+
+  /* ━━━ フッター ━━━ */
+  .footer {
+    text-align: center;
+    padding: 28px 20px;
+    font-size: 0.82rem;
+    color: #888;
+    border-top: 2px solid var(--border-light);
+    background: var(--bg-alt);
+    line-height: 1.8;
+  }
+
+  /* ━━━ 要点まとめ ━━━ */
+  .summary {
+    padding: 28px 20px 32px;
+    background: #fff;
+    border-bottom: 6px solid var(--bg-alt);
+  }
+  .summary-badge {
+    display: inline-block;
+    background: var(--accent-red);
+    color: #fff;
+    font-size: 0.82rem;
+    font-weight: 700;
+    padding: 5px 14px;
+    border-radius: 6px;
+    letter-spacing: 0.08em;
+    margin-bottom: 14px;
+  }
+  .summary-title {
+    font-family: 'Noto Serif JP', serif;
+    font-size: 1.2rem;
+    font-weight: 900;
+    margin-bottom: 8px;
+    line-height: 1.6;
+  }
+  .summary-lead {
+    font-size: 0.92rem;
+    color: var(--text-sub);
+    margin-bottom: 22px;
+    line-height: 1.9;
+  }
+
+  /* 信号カード */
+  .signal-card {
+    border-radius: 12px;
+    padding: 16px 18px;
+    margin: 10px 0;
+    border: 2px solid;
+    display: flex;
+    align-items: flex-start;
+    gap: 14px;
+  }
+  .signal-card .signal-icon {
+    font-size: 1.6rem;
+    flex-shrink: 0;
+    line-height: 1.2;
+    margin-top: 2px;
+  }
+  .signal-card .signal-body {
+    flex: 1;
+    min-width: 0;
+  }
+  .signal-card .signal-label {
+    font-size: 0.78rem;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    margin-bottom: 4px;
+    display: block;
+  }
+  .signal-card .signal-text {
+    font-size: 0.95rem;
+    line-height: 1.85;
+    font-weight: 500;
+  }
+  .signal-card.red {
+    background: var(--accent-red-bg);
+    border-color: var(--accent-red-border);
+  }
+  .signal-card.red .signal-label { color: var(--accent-red); }
+  .signal-card.green {
+    background: var(--accent-green-bg);
+    border-color: var(--accent-green-border);
+  }
+  .signal-card.green .signal-label { color: var(--accent-green); }
+  .signal-card.blue {
+    background: var(--accent-blue-bg);
+    border-color: var(--accent-blue-border);
+  }
+  .signal-card.blue .signal-label { color: var(--accent-blue); }
+  .signal-card.gold {
+    background: var(--accent-gold-bg);
+    border-color: var(--accent-gold-border);
+  }
+  .signal-card.gold .signal-label { color: var(--accent-gold); }
+
+  /* 信号機 */
+  .traffic-light {
+    margin: 24px 0;
+    padding: 20px 18px;
+    background: var(--text);
+    border-radius: 14px;
+    text-align: center;
+  }
+  .traffic-light-title {
+    color: #ccc;
+    font-size: 0.78rem;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    margin-bottom: 12px;
+  }
+  .traffic-icons {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    margin-bottom: 10px;
+  }
+  .traffic-dot {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #333;
+  }
+  .traffic-dot.active-red { background: #e74c3c; box-shadow: 0 0 16px rgba(231,76,60,0.6); }
+  .traffic-dot.active-yellow { background: #f1c40f; box-shadow: 0 0 16px rgba(241,196,15,0.6); }
+  .traffic-dot.dim { opacity: 0.25; }
+  .traffic-label {
+    color: #e74c3c;
+    font-size: 1.1rem;
+    font-weight: 900;
+    margin-top: 4px;
+  }
+  .traffic-sub {
+    color: #aaa;
+    font-size: 0.8rem;
+    margin-top: 4px;
+    line-height: 1.7;
+  }
+
+  /* 追い風・向かい風の横並びミニカード */
+  .sector-mini-group {
+    margin: 16px 0;
+  }
+  .sector-mini-label {
+    font-size: 0.78rem;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    margin-bottom: 8px;
+    padding-left: 2px;
+  }
+  .sector-mini-label.tw-label { color: var(--accent-green); }
+  .sector-mini-label.hw-label { color: var(--accent-red); }
+  .sector-mini-chips {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+  .sector-chip {
+    font-size: 0.88rem;
+    font-weight: 700;
+    padding: 8px 14px;
+    border-radius: 8px;
+    line-height: 1.3;
+  }
+  .sector-chip.tw {
+    background: var(--accent-green);
+    color: #fff;
+  }
+  .sector-chip.hw {
+    background: var(--accent-red);
+    color: #fff;
+  }
+
+  .summary-note {
+    margin-top: 20px;
+    font-size: 0.82rem;
+    color: #999;
+    line-height: 1.8;
+    text-align: center;
+  }
+
+  /* ━━━ NVDA決算シナリオ専用 ━━━ */
+  .nvda-card {
+    border-radius: 14px;
+    padding: 22px 20px;
+    margin: 18px 0;
+    border-width: 2px;
+    border-style: solid;
+  }
+  .nvda-card.bull {
+    background: var(--accent-green-bg);
+    border-color: var(--accent-green-border);
+  }
+  .nvda-card.neutral {
+    background: var(--accent-blue-bg);
+    border-color: var(--accent-blue-border);
+  }
+  .nvda-card.bear {
+    background: var(--accent-red-bg);
+    border-color: var(--accent-red-border);
+  }
+  .nvda-card-tag {
+    display: inline-block;
+    font-size: 0.72rem;
+    font-weight: 700;
+    padding: 3px 12px;
+    border-radius: 6px;
+    margin-bottom: 8px;
+    color: #fff;
+    letter-spacing: 0.05em;
+  }
+  .nvda-card.bull .nvda-card-tag { background: var(--accent-green); }
+  .nvda-card.neutral .nvda-card-tag { background: var(--accent-blue); }
+  .nvda-card.bear .nvda-card-tag { background: var(--accent-red); }
+  .nvda-card h4 {
+    font-size: 1.05rem;
+    font-weight: 700;
+    margin-bottom: 12px;
+    line-height: 1.5;
+  }
+  .nvda-card p {
+    font-size: 0.92rem;
+    line-height: 1.95;
+    margin-bottom: 10px;
+  }
+  .nvda-card .nvda-impact {
+    margin-top: 12px;
+    padding: 12px 14px;
+    background: rgba(255,255,255,0.65);
+    border-radius: 8px;
+    font-size: 0.88rem;
+    line-height: 1.85;
+  }
+  .nvda-card .nvda-impact strong {
+    background: none;
+    padding: 0;
+    color: var(--text);
+    display: block;
+    font-size: 0.78rem;
+    margin-bottom: 4px;
+    letter-spacing: 0.05em;
+  }
+
+  /* ━━━ コラム ━━━ */
+  .column-section {
+    padding: 32px 20px 40px;
+    background: linear-gradient(180deg, #fafaf5 0%, #f3f1ea 100%);
+    border-bottom: 6px solid var(--bg-alt);
+  }
+  .column-badge {
+    display: inline-block;
+    background: var(--accent-gold);
+    color: #fff;
+    font-size: 0.75rem;
+    font-weight: 700;
+    padding: 4px 12px;
+    border-radius: 6px;
+    margin-bottom: 10px;
+    letter-spacing: 0.06em;
+  }
+  .column-title {
+    font-family: 'Noto Serif JP', serif;
+    font-size: 1.2rem;
+    font-weight: 900;
+    line-height: 1.6;
+    margin-bottom: 14px;
+    padding-bottom: 10px;
+    border-bottom: 3px solid var(--accent-gold);
+  }
+  .column-sub-heading {
+    font-size: 1rem;
+    font-weight: 700;
+    margin: 24px 0 12px;
+    padding: 8px 12px;
+    background: var(--bg);
+    border-left: 4px solid var(--accent-gold);
+    border-radius: 4px;
+    color: var(--text);
+    line-height: 1.5;
+  }
+  .checklist {
+    background: var(--bg);
+    border: 2px solid var(--accent-gold-border);
+    border-radius: 12px;
+    padding: 8px 0;
+    margin: 16px 0;
+  }
+  .checklist-row {
+    display: flex;
+    align-items: flex-start;
+    padding: 12px 16px;
+    border-bottom: 1px dashed var(--border-light);
+    gap: 12px;
+    font-size: 0.9rem;
+    line-height: 1.85;
+  }
+  .checklist-row:last-child { border-bottom: none; }
+  .checklist-row .check-item-label {
+    flex: 0 0 38%;
+    font-weight: 700;
+    color: var(--text);
+  }
+  .checklist-row .check-item-eval {
+    flex: 1;
+    color: var(--text-sub);
+  }
+  .check-symbol {
+    font-weight: 900;
+    margin-right: 4px;
+  }
+  .check-symbol.good { color: var(--accent-green); }
+  .check-symbol.caution { color: var(--accent-gold); }
+  .check-symbol.warn { color: var(--accent-red); }
+
+  /* ━━━ トップへ戻る ━━━ */
+  .back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 52px;
+    height: 52px;
+    border-radius: 50%;
+    background: var(--accent-blue);
+    color: #fff;
+    border: none;
+    font-size: 1.3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 14px rgba(0,0,0,0.25);
+    cursor: pointer;
+    z-index: 999;
+    opacity: 0;
+    transition: opacity 0.3s;
+  }
+  .back-to-top.show { opacity: 1; }
+
+  /* ━━━ ロックセクション ━━━ */
+  .locked-section {
+    text-align: center;
+    padding: 40px 24px;
+    background: var(--bg-alt);
+    border-top: 3px solid var(--border);
+  }
+  .lock-icon { font-size: 2.2rem; margin-bottom: 10px; }
+  .lock-title {
+    font-size: 1.05rem;
+    font-weight: 700;
+    color: var(--text);
+    margin-bottom: 12px;
+  }
+  .lock-desc {
+    font-size: 0.85rem;
+    color: #888;
+    line-height: 1.9;
+  }
+  /* ━━━ CTAブロック ━━━ */
+  .cta-block {
+    background: #1a1a1a;
+    color: #fff;
+    text-align: center;
+    padding: 36px 24px 40px;
+  }
+  .cta-block .cta-title {
+    font-size: 1.1rem;
+    font-weight: 700;
+    margin-bottom: 14px;
+    line-height: 1.7;
+    color: #fff;
+  }
+  .cta-block .cta-desc {
+    font-size: 0.85rem;
+    color: #ddd;
+    margin-bottom: 24px;
+    line-height: 1.9;
+  }
+  .btn-primary {
+    display: inline-block;
+    background: var(--accent-gold);
+    color: #fff;
+    font-size: 0.98rem;
+    font-weight: 700;
+    padding: 15px 36px;
+    border-radius: 4px;
+    text-decoration: none;
+    letter-spacing: 0.03em;
+    transition: opacity 0.2s;
+  }
+  .btn-primary:hover { opacity: 0.9; }
+  /* ━━━ サイトフッター ━━━ */
+  .site-footer {
+    background: #1a1a1a;
+    color: rgba(255,255,255,0.65);
+    padding: 24px 20px;
+    text-align: center;
+    font-size: 0.7rem;
+    line-height: 2;
+    border-top: 1px solid #333;
+  }
+  .site-footer .footer-disclaimer {
+    margin-top: 10px;
+    font-size: 0.65rem;
+    opacity: 0.7;
+    line-height: 1.7;
+  }
+</style>
+</head>
+<body>
+
+<button class="back-to-top" id="topBtn" onclick="window.scrollTo({top:0,behavior:'smooth'})" aria-label="トップへ戻る">▲</button>
+
+<!-- ━━━ ヘッダー ━━━ -->
+<header class="header" id="top">
+  <span class="header-label">週刊マーケットレポート</span>
+  <span class="header-date">2026年5月20日（水）午前11時 前場途中版</span>
+  <h1 class="header-title">
+    <span class="hl">6万円大台割れ</span>──<br>世界的金利上昇の連鎖と<br><span class="hl">本日夜エヌビディア決算</span>を控え緊張感
+  </h1>
+</header>
+
+<div class="disclaimer">
+  本資料は情報提供および個人学習目的で作成されたものであり、金融商品取引法に基づく投資助言ではありません。特定の有価証券の売買を推奨するものではなく、最終的な投資判断と責任はご自身にあります。東京前場取引中（11時時点）の情報を含みます。
+</div>
+
+<!-- ━━━ 目次 ━━━ -->
+<nav class="toc">
+  <div class="toc-title">📋 もくじ（タップで移動できます）</div>
+  <a href="#summary" style="background:var(--accent-red-bg);border-radius:8px;padding:10px 12px;border:2px solid var(--accent-red-border);color:var(--accent-red);font-weight:700;margin-bottom:8px;"><span class="toc-num">★</span>まず読む：今週の要点まとめ</a>
+  <a href="#sec0"><span class="toc-num">0.</span>5/16レポートからの流れ総括</a>
+  <a href="#sec1"><span class="toc-num">1.</span>5/16以降の日経平均推移</a>
+  <a href="#sec2"><span class="toc-num">2.</span>今回の下落の本質：世界的金利急騰</a>
+  <a href="#sec3"><span class="toc-num">3.</span>本日夜・エヌビディア決算</a>
+  <a href="#sec4"><span class="toc-num">4.</span>注目の動き：AI安・金融高の二極化</a>
+  <a href="#sec5"><span class="toc-num">5.</span>来週以降の注目ポイント</a>
+  <a href="#column"><span class="toc-num">☕</span>コラム：ペロブスカイト太陽電池</a>
+</nav>
+
+<!-- ━━━ 初心者向け要点まとめ ━━━ -->
+<section class="summary" id="summary">
+  <span class="summary-badge">📌 まず最初にここだけ読めばOK</span>
+  <h2 class="summary-title">今週のポイント ── 3行でわかる今の相場</h2>
+  <p class="summary-lead">忙しい方・投資を始めたばかりの方は、まずこの要点だけ押さえてください。くわしくは各セクションをご覧ください。</p>
+
+  <!-- 信号機 -->
+  <div class="traffic-light">
+    <div class="traffic-light-title">今週の市場 ── 警戒度</div>
+    <div class="traffic-icons">
+      <div class="traffic-dot active-red"></div>
+      <div class="traffic-dot dim"></div>
+      <div class="traffic-dot dim"></div>
+    </div>
+    <div class="traffic-label">🚨 強い警戒（赤信号寄り）</div>
+    <div class="traffic-sub">6万円割れ＋米金利4.6%台＋本日夜NVDA決算。<br>方向が決まる「分水嶺」の只中にあります</div>
+  </div>
+
+  <!-- ❶ いま何が起きている？ -->
+  <div class="signal-card red">
+    <div class="signal-icon">📉</div>
+    <div class="signal-body">
+      <span class="signal-label">❶ いま何が起きている？</span>
+      <span class="signal-text">日経平均が本日5/20の前場で<strong>一時59,000円台に突入</strong>。約3週間ぶりの6万円割れとなりました。原因はアメリカの長期金利が<strong>4.6%台後半（約1年4カ月ぶりの高水準）</strong>に急騰し、世界中で金利が上がる「連鎖」が起きていることです。</span>
+    </div>
+  </div>
+
+  <!-- ❷ なぜ下がっているか -->
+  <div class="signal-card blue">
+    <div class="signal-icon">🌐</div>
+    <div class="signal-body">
+      <span class="signal-label">❷ なぜ下がっているのか？</span>
+      <span class="signal-text">原油（WTI）が<strong>103ドル台で高止まり</strong>し、インフレが落ち着かない状況です。そのため米FRBが「金利を下げる」見通しが遠のき、<strong>AI・半導体などの成長株</strong>に売り圧力が広がっています。同時に金融株は最高値更新と二極化が進んでいます。</span>
+    </div>
+  </div>
+
+  <!-- ❸ 追い風・向かい風 -->
+  <div class="signal-card green">
+    <div class="signal-icon">🧭</div>
+    <div class="signal-body">
+      <span class="signal-label">❸ どの業種が有利？ 不利？</span>
+      <span class="signal-text">「金利上昇」が続く環境では、金融セクターが追い風・グロース株が向かい風という構図が鮮明です。三菱UFJは5/19に最高値を更新しました。</span>
+    </div>
+  </div>
+
+  <div class="sector-mini-group">
+    <div class="sector-mini-label tw-label">▲ 追い風（恩恵を受けやすい）</div>
+    <div class="sector-mini-chips">
+      <span class="sector-chip tw">メガバンク・地銀</span>
+      <span class="sector-chip tw">保険</span>
+      <span class="sector-chip tw">資源・エネルギー</span>
+    </div>
+  </div>
+  <div class="sector-mini-group">
+    <div class="sector-mini-label hw-label">▼ 向かい風（打撃を受けやすい）</div>
+    <div class="sector-mini-chips">
+      <span class="sector-chip hw">AI・半導体</span>
+      <span class="sector-chip hw">電線（フジクラ等）</span>
+      <span class="sector-chip hw">グロース株全般</span>
+    </div>
+  </div>
+
+  <!-- ❹ 本日夜と来週の注目 -->
+  <div class="signal-card gold">
+    <div class="signal-icon">📅</div>
+    <div class="signal-body">
+      <span class="signal-label">❹ これだけは見て！</span>
+      <span class="signal-text"><strong>本日夜（日本時間21〜22時頃）</strong>エヌビディア決算（AI相場の方向性が決まる最重要イベント）<br><strong>5/21（木）寄り付き</strong>東京市場の反応で「調整の終点」か「下落の起点」かが見える</span>
+    </div>
+  </div>
+
+  <p class="summary-note">▼ ここから先は、上の内容をくわしく解説しています ▼</p>
+</section>
+
+<main class="main">
+
+<!-- ━━━ 0. 5/16レポートからの流れ ━━━ -->
+<section class="section" id="sec0">
+  <div class="section-header">
+    <span class="section-num">SECTION 0</span>
+    <h2 class="section-title">5/16レポートから本日までの流れ ── 何が当たり、何が変わったか</h2>
+  </div>
+
+  <p>本セクションでは、5/16の23時版レポートで示した見立てが、本日5/20までにどう実現したかを照合します。</p>
+
+  <table class="check-table">
+    <thead>
+      <tr>
+        <th style="width:40%;">5/16レポートの記載</th>
+        <th>結果・照合</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><strong>金融株を最優先に格上げ</strong>。長期金利高×日銀タカ派でNIM改善</td>
+        <td><span class="check-mark">◎◎</span> 完全的中。5/19に三菱UFJが最高値を更新。「金利上昇が金融株に追い風」という分析が正確に機能</td>
+      </tr>
+      <tr>
+        <td>シカゴ先物1,220円安（61,825円）→<strong>週明け調整継続の可能性</strong>を示唆</td>
+        <td><span class="check-mark">◎</span> 5/18・5/19・5/20と続落。本日5/20は一時60,000円を割り込み59,000円台に突入</td>
+      </tr>
+      <tr>
+        <td>「来週は<strong>比較的調整しやすい週</strong>」と言及</td>
+        <td><span class="check-mark">◎</span> 週明けから続落が続き、本日に一時6万円割れの展開</td>
+      </tr>
+      <tr>
+        <td><strong>エヌビディア決算（5/20）</strong>がAI相場の方向性を占う最重要イベントと明記</td>
+        <td><span class="check-mark">◎</span> 本日夜（NY時間引け後）に発表予定。市場は発表待ちで神経質な動き</td>
+      </tr>
+      <tr>
+        <td><strong>米10年債金利の上昇</strong>がグロース株に逆風と指摘</td>
+        <td><span class="check-mark">◎◎</span> 完全的中。米10年債利回りが5/19に約1年4カ月ぶりの4.6%台後半に上昇。AI・半導体株に売りが拡大</td>
+      </tr>
+      <tr>
+        <td>フジクラは<strong>短期の需給売り圧力が残る</strong>と記載</td>
+        <td><span class="check-mark">◎</span> 5/20の寄り前注文は売り263万株・買い80万株と引き続き重い需給</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <div class="callout shock">
+    <div class="callout-title">📊 本日の構図</div>
+    <p>5/16レポートで予告した「<strong>調整しやすい週</strong>」「<strong>エヌビディア決算が分水嶺</strong>」という2つのシナリオが同時進行しています。さらに米国の金利急騰という新材料が加わり、調整の深さが5/16時点の想定を超えました。</p>
+    <p>本日夜のエヌビディア決算が「<strong>調整の終点</strong>」か「<strong>さらなる下落の起点</strong>」かを決める最重要イベントとなります。</p>
+  </div>
+</section>
+
+<!-- ━━━ 1. 日経平均推移 ━━━ -->
+
+</main>
+
+<div class="locked-section">
+  <div class="lock-icon">🔒</div>
+  <div class="lock-title">ここから先は、会員限定コンテンツです</div>
+  <div class="lock-desc">
+    マクロ環境・需給分析・追い風／向かい風セクター・<br>
+    来週のシナリオなど、具体的な分析は<br>
+    会員の方に毎週お届けしています。
+  </div>
+</div>
+
+<div class="cta-block">
+  <div class="cta-title">
+    毎週の市況解説を<br>フルで受け取りたい方へ
+  </div>
+  <div class="cta-desc">
+    資産運用はるでは、長期投資のための<br>
+    判断軸を毎週お届けしています。<br>
+    ぜひのぞいてみてください。
+  </div>
+  <a href="https://menu.stocksalon.info/haru" class="btn-primary">
+    詳細を見る →
+  </a>
+</div>
+
+<footer class="site-footer">
+  <div>© 2026 資産運用はる</div>
+  <div class="footer-disclaimer">
+    本レポートは情報提供を目的としており、特定の銘柄への投資を推奨するものではありません。<br>
+    投資の最終判断はご自身でお願いします。
+  </div>
+</footer>
+
+<script>
+const btn = document.getElementById('topBtn');
+if (btn) {
+  window.addEventListener('scroll', () => {
+    btn.classList.toggle('show', window.scrollY > 600);
+  });
+}
+</script>
+
+</body>
+</html>
